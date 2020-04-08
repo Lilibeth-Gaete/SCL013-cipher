@@ -66,3 +66,64 @@ href{
     left:10%;
     width: 20%;
   }
+  #home2 .hombre img{
+    position:absolute;
+    bottom:3%;
+    left:70%;
+    width: 20%;
+  }
+  label{
+    color:white;
+    font-size: 160%;
+  }
+   
+   #introduccion{
+     background-color: #706f6f;
+     height:1800px;
+   }
+   
+   #jugar{
+      background-color:#b2b2b2;
+     height:700px;
+     
+   }
+   img{ 
+     width: 100%;
+   }
+  
+  
+  
+  .eleccion{
+     margin-left:36%;
+     padding-top:5%;
+  }
+  
+  .texto{
+  text-align: center;
+  margin-top:4%;
+   }
+  
+  .botones{
+    text-align: center;
+  }
+  
+  button{
+    font-family: 'Roboto Slab', serif;
+    color:white;
+    font-size:100%;
+    width: 9%;
+    height:5%;
+    border-radius: 20px;
+    background-color:#a5a4a4;
+  }
+  button:hover{
+  background-color:#f0b75b;
+  }
+  
+  .retirada{
+    margin-left:15%;
+  }
+  a{
+    color:white;
+    text-decoration:none;
+  }
