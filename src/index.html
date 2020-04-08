@@ -1,98 +1,91 @@
-<!--<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
-</html>-->
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Caesar Cipher</title>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    
-    
-  </head>
 
-  <body>
-     <section  id = "home" class="stop">
-    <section id = "home1">
-     <h1>Juego<br>
-      ¡Secretos Covid!</h1>
- <section id = "home2" class="bajada">
-      <h2>BIENVENID@</h2>
-    <p>¡Hola Detective!</p>
-     <form>
-      <p for="name-example">¿Cómo te llamas ?
-      </p>
-        <input type="name" id="name-example" placeholder="Ingresa tu nombre" name="nombreUsuario" required />
-     </form> 
-  <div class="mujer">
-      <img src="img/detective-mujer.png" alt="detective-niña"> 
-     </div>
- <div class = "hombre"> 
-    <img src="img/detective-hombre.png"  alt="detective-niño">
-     </div></br>
-<div class="botones" > <button onclick="nombreAgente()"><a href="#introduccion">Jugar</a></button> </div>
-      </section> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Juego-Detective</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <section id="home" class="stop">
+    <section id="home1">
+      <h1>Juego<br>
+        ¡Secretos Covid!</h1>
+      <section id="home2" class="bajada">
+        <h2>BIENVENID@</h2>
+        <p>¡Hola Detective!</p>
+        <form>
+          <p for="name-example">¿Cómo te llamas ?
+          </p>
+          <input type="name" id="name-example" placeholder="Ingresa tu nombre" name="nombreUsuario" required />
+        </form>
+        <div class="mujer">
+          <img src="img/detective-mujer.png" alt="detective-niña">
+        </div>
+        <div class="hombre">
+          <img src="img/detective-hombre.png" alt="detective-niño">
+        </div></br>
+        <div class="botones">
+          <button id="juego"><a href="#introduccion">Jugar</a></button>
+          <!--<button onclick="nombreAgente()"><a href="#introduccion">Jugar</a></button>-->
+        </div>
       </section>
-</section>
+    </section>
+  </section>
 
-<section id="introduccion" class="stop">
-     <img src="img/infografia.png" alt="infografia">
+  <section id="introduccion" class="stop">
+    <img src="img/infografia.png" alt="infografia">
     <p id="comienzo"></p>
-    <div class="botones"><button><a href="#jugar">Comenzar</a></button></div>
-   </section>
+    <div class="botones">
+      <button><a href="#jugar">Comenzar</a></button>
+    </div>
+  </section>
 
-   <section id="jugar" class="stop">
-<form class= "desplazamiento">
-       <div class="eleccion">
-      <label for="number">Elige un desplazamiento</label>
-     <select id="numero" name="desplazamiento02">
-        <option selected>0</option>
-        <option >1</option>
-        <option >2</option>
-        <option >3</option>
-        <option >4</option>
-        <option >5</option>
-        <option >6</option>
-        <option >7</option>
-        <option >8</option>
-        <option >9</option>
-        <option >10</option>
-     </select>
-      </br>
+  <section id="jugar" class="stop">
+    <form class="desplazamiento">
+      <div class="eleccion">
+        <label for="number">Elige un desplazamiento</label>
+        <select id="numero" name="desplazamiento02">
+          <option selected>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+        </br>
       </div>
-<div class="texto">
-    <p>Mensaje Normal</p>
-    <textarea id="normal" class="mensajeNormal" rows="10"cols="90" placeholder="Escribe tu mensaje aquí"></textarea></br>
-     <p>Mensaje Encriptado</p>
-     <textarea id="secreto"  class="mensajeSecreto" rows="10"cols="90" placeholder="Escribe tu mensaje secreto aquí"></textarea>
-     <p id="secreto02"></p>
-   </div>
+      <div class="texto">
+        <p>Mensaje Normal</p>
+        <textarea id="normal" class="mensajeNormal" rows="10" cols="90"
+          placeholder="Escribe tu mensaje aquí"></textarea></br>
+        <p>Mensaje Encriptado</p>
+        <textarea id="secreto" class="mensajeSecreto" rows="10" cols="90"
+          placeholder="Escribe tu mensaje secreto aquí"></textarea>
+        <p id="secreto02"></p>
+      </div>
     </form>
     </br>
     <div class="botones">
-      <button onclick ="textoNormal()">Cifrar</button>
-      <button onclick = "textoEncriptado()">Descifrar</button>      
-      <button onclick = "document.getElementById('normal').value =''">Limpiar</button>
-   <button class="retirada"><a href="#home">Retirada</a></button>
-   </div>
- </section>
-   
-   <!-- <script src="app.js"></script>-->
-   <!-- <script src="index.js" type="module"></script>-->
-    <script src="index.js"></script>
+      <button id="botonCifrar">Cifrar</button>
+      <button id="botonDescifrar">Descifrar</button>
+      <!--<button onclick = "document.getElementById('normal').value =''">Limpiar</button>-->
+
+      <button class="retirada"><a href="#home">Retirada</a></button>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
 </body>
+
 </html>
