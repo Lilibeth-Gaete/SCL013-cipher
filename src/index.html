@@ -1,24 +1,9 @@
-<!--<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
-</html>-->
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Caesar Cipher</title>
+    <title>Juego-Detective</title>
    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
@@ -44,7 +29,9 @@
  <div class = "hombre"> 
     <img src="img/detective-hombre.png"  alt="detective-niño">
      </div></br>
-<div class="botones" > <button onclick="nombreAgente()"><a href="#introduccion">Jugar</a></button> </div>
+<div class="botones" > 
+  <button id="juego"><a href="#introduccion">Jugar</a></button>
+  <!--<button onclick="nombreAgente()"><a href="#introduccion">Jugar</a></button>--> </div>
       </section> 
       </section>
 </section>
@@ -52,7 +39,9 @@
 <section id="introduccion" class="stop">
      <img src="img/infografia.png" alt="infografia">
     <p id="comienzo"></p>
-    <div class="botones"><button><a href="#jugar">Comenzar</a></button></div>
+    <div class="botones">
+      <button><a href="#jugar">Comenzar</a></button>
+      </div>
    </section>
 
    <section id="jugar" class="stop">
@@ -84,15 +73,14 @@
     </form>
     </br>
     <div class="botones">
-      <button onclick ="textoNormal()">Cifrar</button>
-      <button onclick = "textoEncriptado()">Descifrar</button>      
-      <button onclick = "document.getElementById('normal').value =''">Limpiar</button>
+      <button id = "botonCifrar">Cifrar</button>
+      <button id = "botonDescifrar">Descifrar</button>      
+      <!--<button onclick = "document.getElementById('normal').value =''">Limpiar</button>-->
+
    <button class="retirada"><a href="#home">Retirada</a></button>
    </div>
  </section>
    
-   <!-- <script src="app.js"></script>-->
-   <!-- <script src="index.js" type="module"></script>-->
     <script src="index.js"></script>
 </body>
 </html>
