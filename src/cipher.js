@@ -1,4 +1,4 @@
-const cipher= {
+const cipher = {
 
   encode:(n,escrito)=>{
   let texto = "";
