@@ -1,6 +1,5 @@
-const cipher = {
-
-  encode:(n,escrito)=>{
+const cifrado= {
+  encode :function (n,escrito){
   let texto = "";
   let termino="";
   let i;
@@ -14,13 +13,13 @@ const cipher = {
          }
       else if(escrito.charCodeAt(i)===32){
           texto= 32;
-          }
-          termino += String.fromCharCode(texto);
-   
    }
-  return termino;
-  },
-  decode:(n,escrito)=>{
+      
+    termino += String.fromCharCode(texto);
+    }
+  return termino; 
+},
+ decode:function (n,escrito){
   let texto = "";
   let termino="";
   let i;
@@ -34,14 +33,12 @@ const cipher = {
          }
       else if(escrito.charCodeAt(i)===32){
           texto= 32;
-          }
-          termino += String.fromCharCode(texto);
-  
+         }
+termino += String.fromCharCode(texto);
    }
-   return termino;
-  }
-    };
-  
-  export default cipher;
+     return termino;
+}
+ }
+    export default cifrado; 
 
 

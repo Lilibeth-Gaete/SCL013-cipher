@@ -1,4 +1,5 @@
-import cipher from './cipher.js';
+import cifrado from './cipher.js';
+
 
 document.getElementById("juego").addEventListener("click",nombreAgente) ;
 function nombreAgente(){
@@ -9,18 +10,18 @@ document.getElementById("comienzo").innerHTML="Detective "+nombre+ " empieza tu 
 document.getElementById("botonCifrar").addEventListener("click",textoNormal);
 
 function textoNormal(){
+  let termino="";
   let n =document.getElementById("numero").value;
   let escrito = document.getElementById("normal").value;
-  //let termino=document.getElementById("secreto").innerHTML = termino;
-  cipher.encode(n,escrito);
+ cifrado.encode(n,escrito);
+ let final =document.getElementById("secreto").innerHTML = cifrado.encode(n,escrito);
 }
-
 
 document.getElementById("botonDescifrar").addEventListener("click",textoEncriptado);
 
 function textoEncriptado(){
-  let n =document.getElementById("numero").value;
-  let escrito = document.getElementById("normal").value;
-  //let termino=document.getElementById("secreto").innerHTML = termino;
-  cipher.decode(n,escrito);
-}
+ let n =document.getElementById("numero").value;
+  let escrito = document.getElementById("secreto").value;
+ cifrado.decode(n,escrito);
+  let final=document.getElementById("normal").innerHTML = cifrado.decode(n,escrito);
+  }
