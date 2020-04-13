@@ -10,16 +10,16 @@
 -link del prototipo del proyecto(Invision)
  https://lilibethgaete788036.invisionapp.com/overview/Prototipo-Juego-Detective01-ck8gdef7a01kj018987lh61ud/screens?v=HdvLhvXI%2FGgNfdn5J%2BTWNw%3D%3D&linkshare=urlcopied
 
- Se realizo un testeo, en el cual la persona indico que no suele leer las instrucciones , pero que al leerlas si entendio como funcionaba el juego,luego el usuario logro realizar las instrucciones dadas y pudimos llegar a la conclusión que faltan botones que indique el desplazamiento de la página al leer las instrucciones y que se incorpore un mensaje que explique que hay que refrescar el juego al querer descifrar un nuevo mensaje. 
+ Se realizo un testeo, en el cual la persona indico que no suele leer las instrucciones , pero que al leerlas si entendio como funcionaba el juego,luego el usuario logro realizar las instrucciones dadas y pudimos llegar a la conclusión que faltan botones que indiquen el desplazamiento de la página al leer las instrucciones y que se incorpore un mensaje que explique que hay que refrescar el juego al querer descifrar un nuevo mensaje. 
 
- Con respecto a las decisiones de diseño, este proyecto al ser su píblico objetivo principalmente niñ@s, se decidió utilizar ilustraciones para ser más agradable y entretenida la visita a nuestro juego. Se uso una gama de colores llamativas para lograr captar la atención de los niñ@s,con explicaciones didácticas, con respecto a la interfaz se incorporaron botones que cambian de color al ser presionados y una infografía que les permitirá a los niñ@s entender de una forma simple lo que significa encriptar un mensaje y en que consiste el Cifrado Cesar; la tipografía escogida para el sitio en general fue Roboto Slab, por ser legible y moderna.
+ Con respecto a las decisiones de diseño, este proyecto al ser su público objetivo principalmente niñ@s, se decidió utilizar ilustraciones para ser más agradable y entretenida la visita a nuestro juego. Se uso una gama de colores llamativas para lograr captar la atención de los niñ@s,con explicaciones didácticas. Con respecto a la interfaz se incorporaron botones que cambian de color al ser presionados y una infografía que les permitirá a los usuarios entender de una forma simple lo que significa encriptar un mensaje y en que consiste el Cifrado Cesar; finalmente la tipografía escogida para el sitio en general fue Roboto Slab, por ser legible y moderna.
 
 ### Ejecución del producto
 
 Esta aplicación es un juego de detectives para niñ@s, para descifrar mensajes encriptados.
 Para ejecutar la aplicación debes:
 
-* Ingresar el nombre del detective.
+* Ingresar el nombre del usuario.
 * Seleccionar botón "Jugar".
 * Leer las instrucciones.
 * Seleccionar botón "Comenzar".
