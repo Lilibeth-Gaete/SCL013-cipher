@@ -10,18 +10,17 @@ document.getElementById("comienzo").innerHTML="Detective "+nombre+ " empieza tu 
 document.getElementById("botonCifrar").addEventListener("click",textoNormal);
 
 function textoNormal(){
-  let termino="";
   let n =document.getElementById("numero").value;
   let escrito = document.getElementById("normal").value;
  cifrado.encode(n,escrito);
- let final =document.getElementById("secreto").innerHTML = cifrado.encode(n,escrito);
+ document.getElementById("secreto").innerHTML = cifrado.encode(n,escrito);
 }
 
 document.getElementById("botonDescifrar").addEventListener("click",textoEncriptado);
 
 function textoEncriptado(){
  let n =document.getElementById("numero").value;
-  let escrito = document.getElementById("secreto").value;
+let escrito = document.getElementById("secreto").value;
  cifrado.decode(n,escrito);
-  let final=document.getElementById("normal").innerHTML = cifrado.decode(n,escrito);
+ document.getElementById("normal").innerHTML = cifrado.decode(n,escrito);
   }
