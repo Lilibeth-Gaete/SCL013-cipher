@@ -14,7 +14,7 @@ function textoNormal(){
   let n =document.getElementById("numero").value;
   let escrito = document.getElementById("normal").value;
  cifrado.encode(n,escrito);
- let final =document.getElementById("secreto").innerHTML = cifrado.encode(n,escrito);
+ let final =document.getElementById("secreto").innerHTML =  cifrado.encode(n,escrito);
 }
 
 document.getElementById("botonDescifrar").addEventListener("click",textoEncriptado);

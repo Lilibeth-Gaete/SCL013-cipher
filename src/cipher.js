@@ -40,5 +40,3 @@ termino += String.fromCharCode(texto);
 }
  }
     export default cifrado; 
-
-
