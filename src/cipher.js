@@ -1,5 +1,4 @@
 
-
 const cifrado = {
   encode: function (n, escrito) {
     let texto = "";
