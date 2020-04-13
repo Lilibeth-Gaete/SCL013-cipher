@@ -10,11 +10,10 @@ function nombreAgente() {
 document.getElementById("botonCifrar").addEventListener("click", textoNormal);
 
 function textoNormal() {
-  var final = "";
   let n = document.getElementById("numero").value;
   let escrito = document.getElementById("normal").value;
   cifrado.encode(n, escrito);
-  final = document.getElementById("secreto").innerHTML = cifrado.encode(n, escrito);
+  document.getElementById("secreto").innerHTML = cifrado.encode(n, escrito);
 }
 
 document.getElementById("botonDescifrar").addEventListener("click", textoEncriptado);
@@ -23,5 +22,5 @@ function textoEncriptado() {
   let n = document.getElementById("numero").value;
   let escrito = document.getElementById("secreto").value;
   cifrado.decode(n, escrito);
-  var final = document.getElementById("normal").innerHTML = cifrado.decode(n, escrito);
+  document.getElementById("normal").innerHTML = cifrado.decode(n, escrito);
 }
