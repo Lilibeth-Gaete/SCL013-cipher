@@ -1,32 +1,37 @@
 // Importamos el objeto `cipher`, que contiene los métodos `encode` y `decode`
-import cipher from '../src/cipher';
+import cifrado from '../src/cipher.js';
 
-describe('cipher', () => {
+describe('cifrado', () => {
 
   test('should be an object', () => {
-    expect(typeof cipher).toBe('object');
+    expect(typeof cifrado).toBe('object');
   });
 
-  describe('cipher.encode', () => {
+  describe('cifrado.encode', () => {
 
     test('should be a function', () => {
-      expect(typeof cipher.encode).toBe('function');
-    });
-    test('should return "HIJKLMNOPQRSTUVWXYZABCDEFG" for "ABCDEFGHIJKLMNOPQRSTUVWXYZ" with offset 33', () => {
-      //completa este test!
+      expect(typeof cifrado.encode).toBe('function');
     });
 
-    
+    test('should return "ABCDEFG" for "CDEFGHI" with offset 2', () => {
+      expect(cifrado.encode(2, "ABCDEFG")).toBe("CDEFGHI");
+
+    });
+    test("debe retornar la letra B , al recibir una A con un offset de 1  ", () => {
+      expect(cifrado.encode(1, "A")).toBe("B");
+    });
+
   });
 
-  describe('cipher.decode', () => {
+  describe('cifrado.decode', () => {
 
     test('should be a function', () => {
-      expect(typeof cipher.decode).toBe('function');
+      expect(typeof cifrado.decode).toBe('function');
     });
 
-    test('should return "ABCDEFGHIJKLMNOPQRSTUVWXYZ" for "HIJKLMNOPQRSTUVWXYZABCDEFG" with offset 33', () => {
-      //completa este test!
+
+    test('should return "CDEFGHI" for  "ABCDEFG" with offset 2', () => {
+      expect(cifrado.decode(2, "CDEFGHI")).toBe("ABCDEFG");
     });
 
   });
